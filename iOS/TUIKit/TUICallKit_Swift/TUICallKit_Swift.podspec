@@ -9,8 +9,16 @@ Pod::Spec.new do |s|
   
   s.ios.deployment_target = '11.0'
   s.swift_version = '5.0'
-  s.source_files = '**/*.{swift,h,m,mm}'
-  s.resource = '**/*.{bundle,xib,storyboard,json,xcassets}'
-  s.frameworks = 'AVFoundation', 'Accelerate'
+  
+  # 从 podspec 所在目录的相对路径
+  s.source_files = 'TUICallKit_Swift/**/*.{swift,h,m,mm}'
+  s.exclude_files = '**/Demo/**', '**/Pods/**', '**/Tests/**', '**/Debug/**'
+  
+  s.resource = 'TUICallKit_Swift/Resources/**/*.{bundle,xcassets,json,plist,lproj,xib,storyboard}'
+  
+  s.frameworks = 'AVFoundation', 'Accelerate', 'ReplayKit', 'SystemConfiguration', 'CoreTelephony'
+  s.libraries = 'c++', 'resolv', 'sqlite3'
+  
   s.dependency 'TUICore'
+  s.dependency 'TXLiteAVSDK_Professional'
 end
