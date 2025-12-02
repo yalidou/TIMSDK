@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
 
   spec.requires_arc = true
   
-  spec.source = { :http => 'https://im.sdk.cloud.tencent.cn/download/tuikit/8.6.7019/ios/TUIConversation.zip?time=3'}
+  spec.source = { :git => 'https://github.com/yalidou/TIMSDK.git', :tag => spec.version.to_s }
 
   spec.default_subspec = 'ALL'
 

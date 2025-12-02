@@ -1,5 +1,5 @@
 Pod::Spec.new do |spec|
-  spec.name         = 'TIMPush'
+  spec.name = 'TIMPush'
   spec.version      = '8.6.7019'
   spec.platform     = :ios
   spec.ios.deployment_target = '10.0'
@@ -11,13 +11,14 @@ Pod::Spec.new do |spec|
   spec.homepage     = 'https://cloud.tencent.com/document/product/269/3794'
   spec.documentation_url = 'https://cloud.tencent.com/document/product/269/9147'
   spec.authors      = 'tencent video cloud'
-  spec.summary      = 'TIMPush'
+  spec.summary      = 'TPush'
   
   spec.requires_arc = true
 
-  spec.source = { :http => 'https://im.sdk.qcloud.com/download/tuiplugin/8.6.7019/ios/TIMPush_8.6.7019.xcframework.zip'}
+  spec.source = { :git => 'https://github.com/yalidou/TIMSDK.git', :tag => spec.version.to_s }
   
-  spec.dependency 'TXIMSDK_Plus_iOS_XCFramework','>= 8.6.7019'
+  spec.dependency 'TXPushSDK_IOS_XCFramework'
+
   spec.vendored_frameworks = 'TIMPush.xcframework'
   spec.resource_bundle = {
         "#{spec.module_name}_Privacy" => '**/TIMPush.xcframework/ios-arm64/TIMPush.framework/PrivacyInfo.xcprivacy'
@@ -26,5 +27,6 @@ Pod::Spec.new do |spec|
   spec.public_header_files = '**/TIMPush.xcframework/ios-arm64/TIMPush.framework/Headers/*.h'
   spec.source_files = '**/TIMPush.xcframework/ios-arm64/TIMPush.framework/Headers/*.h'
   spec.xcconfig = { 'HEADER_SEARCH_PATHS' => '**/TIMPush.xcframework/ios-arm64/TIMPush.framework/Headers/*.h'}
+  
 
 end

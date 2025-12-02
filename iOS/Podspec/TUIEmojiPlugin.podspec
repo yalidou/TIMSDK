@@ -14,7 +14,7 @@ Pod::Spec.new do |spec|
   spec.summary      = 'TUIEmojiPlugin'
   spec.requires_arc = true
 
-  spec.source = { :http => 'https://im.sdk.cloud.tencent.cn/download/tuikit/8.6.7019/ios/TUIEmojiPlugin.zip?time=4'}
+  spec.source = { :git => 'https://github.com/yalidou/TIMSDK.git', :tag => spec.version.to_s }
 
   spec.dependency 'TUICore'
   spec.dependency 'TIMCommon','~>8.6.7019'
