@@ -1,0 +1,1 @@
+iOS/Podspec/TXIMSDK_Plus_iOS_XCFramework.podspec

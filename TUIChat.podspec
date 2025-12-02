@@ -1,0 +1,1 @@
+iOS/Podspec/TUIChat.podspec

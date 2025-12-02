@@ -1,0 +1,1 @@
+iOS/Podspec/TXIMSDK_Plus_QuicPlugin.podspec

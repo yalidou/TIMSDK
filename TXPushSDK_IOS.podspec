@@ -1,0 +1,1 @@
+iOS/Podspec/TXPushSDK_IOS.podspec

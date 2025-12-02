@@ -1,0 +1,1 @@
+iOS/Podspec/TXIMSDK_iOS.podspec

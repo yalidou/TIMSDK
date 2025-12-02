@@ -1,0 +1,1 @@
+iOS/Podspec/TUIEmojiPlugin.podspec

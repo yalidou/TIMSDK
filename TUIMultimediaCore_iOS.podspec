@@ -1,0 +1,1 @@
+iOS/Podspec/TUIMultimediaCore_iOS.podspec
